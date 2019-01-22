@@ -1,0 +1,156 @@
+# -*- mode: org; fill-column: 79; -*-
+
+#+TITLE:Introduction to Algorithms
+#+SUBTITLE:3rd Edition 2009
+#+AUTHOR:Thomas H. Cormen
+#+DATE:<2019-01-22 Tue 07:21> {{{VERSION}}} {{{OUTLINE}}}
+#+MACRO: VERSION Version 0.0.1
+#+MACRO: OUTLINE EDITION 0.1
+#+CREATOR:WLHarvey4
+
+
+
+* Preface
+  :PROPERTIES:
+  :UNNUMBERED:
+  :END:
+  This book provides a comprehensive introduction to the study of
+  computer algorithms.  It presents many algorithms and covers them in
+  consideration depth, yet makes their design and analysis accessible
+  to all levels of readers.  The authors have tried to keep
+  explanations elementary without sacrificing depth of coverage or
+  mathematical rigor.
+
+  Each chapter presents an algorithmn, a design technique, an
+  application area, or a related topic.  Algorithms are described in
+  English and in a pseudocode designed to be readable by anyone who
+  has done a little programming.  The book contains 244 figures
+  illustrating how algorithms work.  Since the authors emphasize
+  /efficiency/ as a design criteria, they include careful analyses of
+  the running times of all algorithms.
+
+  The text is intended primarly for use in undergraduate or graduate
+  courses in algorithmns or data structures.  Because it discusses
+  engineering issues in algorithm design, as well as mathematical
+  aspects, it is equally well suited for self-study by technical
+  professionals.
+
+** To the Teacher
+
+   The authors have designed the book to be both versatile and
+   complete.  They have provided considerably more material than can
+   fit in a typical one-term course, so the teacher should pick and
+   choose the material that best supports the course he or she wishes
+   to teach.
+
+   The chapters are relatively self-contained, so there is no need to
+   worry about an unexpected and unnecessary dependence of one chapter
+   on another.  Each chapter presents the easier material first and
+   the more difficult material later, with section boundaries marking
+   natural stopping points.  In an undergraduate course, you might use
+   only the earlier sections from a chapter; in a graduate course, you
+   might cover the entire chapter.
+
+   The authors have included 957 exercises and 158 problems.  Each
+   section ends with exercises and each chapter ends with problems.
+   The exercises are generally short questions that test basic mastery
+   of the material.  Some are simple self-check thought exercises,
+   whereas others are more substantial and are suitable as assigned
+   homework.  The problems are more elaborate case sttudies that often
+   introduce new material; they often consist of several questions
+   that lead the student through the steps required to arrive at a
+   solution.
+
+   The authors have made publicly available solutions to some, but not
+   all, of the problems and exercises.  The web site
+   [[http://mitpress/mit.edu/algorithms/]], links to these solutions.  The
+   authors expect the set of solutions that they post to grow slowly
+   over time.
+
+   The authors have starred the sections and exercises thtat are more
+   suitable for graduate students than undergraduates.  A starred
+   section is not necessarily more difficult than an unstarred one,
+   but it may require an understanding of more advanced mathematics.
+   Likewise, starred exercises may require an advanced background or
+   more than average creativity.
+
+** To the Student
+
+   The authors hope this textbook provides an enjoyable introduction
+   to the field of algorithms.  They have attempted to make every
+   algorithm accessible and interesting.  To help the student
+   encounter unfamiliar or difficult algorithms, they describe each
+   one in a step-by-step manner.  They also provide careful
+   explanations of the mathematics needed to understand the analysis
+   of the algorithms.  If you already have some familiarity with a
+   topic, you will find the chapters organized so that you can skim
+   introductory sections and proceed quickly to the more advanced
+   material.
+
+   This is a large book, and your class will probably cover only a
+   portion of its material.  The authors have tried to make this a
+   book that will be useful now as a course text book and also later
+   in your career as a mathematical desk reference or as an
+   engineering handbook.
+
+*** Prerequisites for Reading this Book
+
+    - The student should have some programming experience.  In
+      particular, the student should understand *recursive procedures*
+      and *simple data structures* such as /arrays/ and /linked lists/.
+    - The student should have some facility with *mathematical
+      proofs*, and especially *proofs* by /mathematical induction/.  A
+      few portions of the book rely on some knowledge of elementary
+      calculus.  Beyond that, Parts I and VIII of this book teach the
+      student all the mathematical techniques they will need.
+
+** To the Professional
+
+   The wide range of topics in this book makes it an excellent
+   handbook on algorithms.  Because each chapter is relatively
+   self-contained, one can focus in on the topics of most interest.
+
+   Most of the algorithms discussed have great practical utility.  The
+   authors therefore address implementation concerns and other
+   engineering issues.  They often provide practical alternatives to
+   the few algorithms that are primarily of theoretical interest.
+
+   If one wishes to implement any of the algorithms, one should find
+   the translation of the pseudocode into a favorite programming
+   language to be a fairly straightforward task.  The authors have
+   designed the pseudocode to present each algorithm clearly and
+   succinctly.  Consequently, the authors do not address
+   error-handling and other software-engineering issues that require
+   specific assumptions about one's programming environment.  The
+   authors attempt to present each algorithm simply and directly
+   without allowing the idiosyncrasies of a particular programming
+   language to obscure its essence.
+
+** To our Collegues
+
+   The authors have supplied an extensive bibliography and pointers to
+   the current literature.  Each chapter ends with a set of chapter
+   notes that give historical details and references.  The chapter
+   notes do not provide a complete reference to the whole field of
+   algorithms, however.  Space constraints prevented the authors from
+   including many interesting algorithms.
+
+#+TEXINFO: @part FOUNDATIONS
+
+* Introduction
+
+  This part will start you thinking about designing and analyzing
+  algorithms.
+
+* EXPORT SETTINGS                                                  :noexport:
+#+TEXINFO_CLASS: info
+#+TEXINFO_HEADER:
+#+TEXINFO_POST_HEADER:
+#+SUBTITLE:
+#+SUBAUTHOR:Charles E. Leiserson
+#+SUBAUTHOR:Ronald L. Rivest
+#+SUBAUTHOR:Clifford Stein
+#+TEXINFO_DIR_CATEGORY:
+#+TEXINFO_DIR_TITLE:
+#+TEXINFO_DIR_DESC:
+#+TEXINFO_PRINTED_TITLE:
