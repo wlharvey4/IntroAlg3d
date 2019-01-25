@@ -3,8 +3,8 @@
 #+TITLE:Introduction to Algorithms
 #+SUBTITLE:3rd Edition 2009
 #+AUTHOR:Thomas H. Cormen
-#+DATE:<2019-01-22 Tue 07:21> {{{VERSION}}} {{{OUTLINE}}}
-#+MACRO: VERSION Version 0.0.1
+#+DATE:2019-01-25 Fri 12:43 {{{VERSION}}} {{{OUTLINE}}}
+#+MACRO: VERSION Version 0.0.2
 #+MACRO: OUTLINE EDITION 0.1
 #+CREATOR:WLHarvey4
 
@@ -14,9 +14,10 @@
   :PROPERTIES:
   :UNNUMBERED:
   :END:
+
   This book provides a comprehensive introduction to the study of
   computer algorithms.  It presents many algorithms and covers them in
-  consideration depth, yet makes their design and analysis accessible
+  considerable depth, yet makes their design and analysis accessible
   to all levels of readers.  The authors have tried to keep
   explanations elementary without sacrificing depth of coverage or
   mathematical rigor.
@@ -61,12 +62,15 @@
    that lead the student through the steps required to arrive at a
    solution.
 
+   #+cindex: web site
+   #+cindex: solutions
    The authors have made publicly available solutions to some, but not
    all, of the problems and exercises.  The web site
    [[http://mitpress/mit.edu/algorithms/]], links to these solutions.  The
    authors expect the set of solutions that they post to grow slowly
    over time.
 
+   #+cindex: graduate level problems
    The authors have starred the sections and exercises thtat are more
    suitable for graduate students than undergraduates.  A starred
    section is not necessarily more difficult than an unstarred one,
@@ -95,6 +99,7 @@
 
 *** Prerequisites for Reading this Book
 
+    #+cindex: prerequisites
     - The student should have some programming experience.  In
       particular, the student should understand *recursive procedures*
       and *simple data structures* such as /arrays/ and /linked lists/.
@@ -115,6 +120,7 @@
    engineering issues.  They often provide practical alternatives to
    the few algorithms that are primarily of theoretical interest.
 
+   #+cindex: pseudocode
    If one wishes to implement any of the algorithms, one should find
    the translation of the pseudocode into a favorite programming
    language to be a fairly straightforward task.  The authors have
@@ -142,6 +148,115 @@
   This part will start you thinking about designing and analyzing
   algorithms.
 
+#+TEXINFO: @part Sorting and Order Statistics
+
+#+TEXINFO: @part Data Structures
+
+#+TEXINFO: @part Advanced Design and Analysis Techniques
+
+#+TEXINFO: @part Advanced Data Structures
+
+#+TEXINFO: @part Graph Algorithms
+
+#+TEXINFO: @part Selected Topics
+
+#+TEXINFO: @part Mathematical Background
+
+
+* Introduction to Mathematical Background
+  :PROPERTIES:
+  :UNNUMBERED: t
+  :END:
+
+  #+cindex: mathematical tools
+  When analyzing algorithms, one often needs to draw upon a body of
+  mathematical tools.  Some of these tools are as simple as
+  high-school algebra, but others may be new.  Part I presented how to
+  manipulate asymptotic notations and solve recurrences.
+
+  This appendix comprises a compendium of several other concepts and
+  methods used to analyze algorithms.  You should treat this appendix
+  as reference material.  Exercises and problems are included in order
+  for you to improve your skills in these areas.
+
+  {{{heading(Appendix A Summations)}}}
+
+  #+cindexz; bounding summatins
+  Appendix A offers methods for evaluating and bounding summations,
+  which occur frequently in the analysis of algorithms.  Many of the
+  formulas here appear in any calculus text, but you will find it
+  convenient to have these methods compiled in one place.
+
+  {{{heading(Appendix B Sets Relations Functions Graphs Trees)}}}
+
+  #+cindex: sets
+  #+cindex: relations
+  #+cindex: functions
+  #+cindex: graphs
+  #+cindex: trees
+  Appendix B contains basic definitions for:
+
+  - sets
+  - relations
+  - functions
+  - graphs
+  - trees
+
+
+  It also gives some basic properties of these mathematical objects.
+
+  {{{heading(Appendix C Counting Permutations Combinations)}}}
+
+  Appendix C begins with elementary principles of counting:
+
+  #+cindex: counting
+  #+cindex: permutations
+  #+cindex: combinations
+  - permutations
+  - combinations
+
+
+  #+cindex: probability
+  The remainder contains definitions and properties of basic
+  probability.  Most of the algorithms in this book require no
+  probability for the analysis, and thus you can easily omit the
+  latter sections of the chapter on a first reading Later when you
+  encounter a probabilistic analysis that you want to understand
+  better, you will find Appendix C well organized for reference
+  purposes.
+
+  {{{heading(Appendix D Matrices Operations Properties)}}}
+
+  #+cindex: matrices
+  You have probably seen most of this material already if you have
+  taken a course in linear algebra, but you might find it helpful to
+  have one place to look for our notation and definitions.
+
+* Summations
+  :PROPERTIES:
+  :APPENDIX: t
+  :END:
+
+* Sets Etc.
+  :PROPERTIES:
+  :APPENDIX: t
+  :END:
+
+* Counting and Probability
+  :PROPERTIES:
+  :APPENDIX: t
+  :END:
+
+* Matrices
+  :PROPERTIES:
+  :APPENDIX: t
+  :END:
+
+* Index
+  :PROPERTIES:
+  :INDEX:    cp
+  :END:
+
 * EXPORT SETTINGS                                                  :noexport:
 #+TEXINFO_CLASS: info
 #+TEXINFO_HEADER:
@@ -154,3 +269,6 @@
 #+TEXINFO_DIR_TITLE:
 #+TEXINFO_DIR_DESC:
 #+TEXINFO_PRINTED_TITLE:
+
+* MACRO DEFINITIONS                                                :noexport:
+#+MACRO: heading @@texinfo:@heading $1@@
