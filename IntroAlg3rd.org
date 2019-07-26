@@ -1,14 +1,19 @@
 # -*- mode: org; fill-column: 79; -*-
 
 #+TITLE:Introduction to Algorithms
-#+SUBTITLE:3rd Edition 2009
+#+SUBTITLE:3rd Edition 2009 {{{VERSION}}} {{{OUTLINE}}}
 #+AUTHOR:Thomas H. Cormen
-#+DATE:2019-01-25 Fri 12:43 {{{VERSION}}} {{{OUTLINE}}}
-#+MACRO: VERSION Version 0.0.2
-#+MACRO: OUTLINE EDITION 0.1
+#+SUBAUTHOR:Charles H. Leiserson
+#+SUBAUTHOR:Ronald L. Rivest
+#+SUBAUTHOR:Clifford Stein
+#+DATE:2019-07-26 13:35
+#+MACRO: VERSION Version 0.0.3
+#+MACRO: OUTLINE EDITION 0.2
 #+CREATOR:WLHarvey4
 
+{{{title}}}
 
+#+texinfo: @insertcopying
 
 * Preface
   :PROPERTIES:
@@ -143,25 +148,126 @@
 
 #+TEXINFO: @part FOUNDATIONS
 
-* Introduction
+* Main Text
+
+#+TEXINFO: @part Foundations
 
   This part will start you thinking about designing and analyzing
   algorithms.
 
+** Introduction to Foundations
+:PROPERTIES:
+:unnumbered: t
+:END:
+
+** The Role of Algorithms in Computing
+
+** Getting Started
+
+** Growth in Functions
+
+** Divide-and-Conquer
+
+** Probabilistic Analysis and Randomized Algorithms
+
 #+TEXINFO: @part Sorting and Order Statistics
+
+** Introduction to Sorting
+:PROPERTIES:
+:unnumbered: t
+:END:
+
+** Heapsort
+
+** Quicksort
+
+** Sorting in Linear Time
+
+** Medians and Order Statistics
 
 #+TEXINFO: @part Data Structures
 
+** Elementary Data Structures
+
+** Hash Tables
+
+** Binary Search Trees
+
+** Red-Black Trees
+
+** Augmenting Data Structures
+
 #+TEXINFO: @part Advanced Design and Analysis Techniques
+
+** Introduction to Advanced Design and Analysis
+:PROPERTIES:
+:unnumbered: t
+:END:
+
+** Dynamic Programming
+
+** Greedy Algorithms
+
+** Amortized Analysis
 
 #+TEXINFO: @part Advanced Data Structures
 
+** Introduction to Advanced Data Structures
+:PROPERTIES:
+:unnumbered: t
+:END:
+
+** B-Trees
+
+** Fibonacci Heaps
+
+** van Emde Boas Trees
+
+** Data Structures for Disjoint Sets
+
 #+TEXINFO: @part Graph Algorithms
+
+** Introduction to Graph Algorithms
+:PROPERTIES:
+:unnumbered: t
+:END:
+
+** Elementary Graph Algorithms
+
+** Minimum Spanning Trees
+
+** Single-Source Shortest Path
+
+** All-Pairs Shortest Paths
+
+** Maximum Flow
 
 #+TEXINFO: @part Selected Topics
 
-#+TEXINFO: @part Mathematical Background
+** Introduction to Selected Topics
+:PROPERTIES:
+:unnumbered: y
+:END:
 
+** Multithreaded Algorithms
+
+** Matrix Operations
+
+** Linear Programming 
+
+** Polynomials and the FFT
+
+** Number-Theoretic Algorithms
+
+** String Matching
+
+** Computational Geometry
+
+** NP-Completeness
+
+** Approximation Algorithms
+
+#+TEXINFO: @part Mathematical Background
 
 * Introduction to Mathematical Background
   :PROPERTIES:
@@ -252,23 +358,43 @@
   :APPENDIX: t
   :END:
 
-* Index
+* Copyright Page
+:PROPERTIES:
+:copying:  t
+:END:
+Text \copy 2015 by {{{author}}} /et al./
+
+Outline \copy 2019 by LOLH
+* Concept Index
   :PROPERTIES:
   :INDEX:    cp
   :END:
 
-* EXPORT SETTINGS                                                  :noexport:
+* Program Index
+:PROPERTIES:
+:unnumbered: t
+:index:    pg
+:END:
+
+* Function Index
+:PROPERTIES:
+:index:    fn
+:unnumbered: t
+:END:
+
+* Export Settings                                                  :noexport:
+#+TEXINFO_FILENAME: IntroAlg3rd.info
 #+TEXINFO_CLASS: info
 #+TEXINFO_HEADER:
 #+TEXINFO_POST_HEADER:
-#+SUBTITLE:
-#+SUBAUTHOR:Charles E. Leiserson
-#+SUBAUTHOR:Ronald L. Rivest
-#+SUBAUTHOR:Clifford Stein
-#+TEXINFO_DIR_CATEGORY:
-#+TEXINFO_DIR_TITLE:
-#+TEXINFO_DIR_DESC:
-#+TEXINFO_PRINTED_TITLE:
+#+TEXINFO_DIR_CATEGORY:Computer Science
+#+TEXINFO_DIR_TITLE:Intro to Algorithms
+#+TEXINFO_DIR_DESC:Introduction to Algorithms 3rd Cormen
+#+TEXINFO_PRINTED_TITLE:Introduction to Algorithms
 
-* MACRO DEFINITIONS                                                :noexport:
+* Macro Definitions                                                :noexport:
 #+MACRO: heading @@texinfo:@heading $1@@
+* Local Variables                                                  :noexport:
+# Local Variables:
+# time-stamp-pattern:"9/^\\#\\+DATE:%:y-%02m-%02d %02H:%02M$"
+# End:
