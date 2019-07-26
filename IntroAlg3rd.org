@@ -6,8 +6,8 @@
 #+SUBAUTHOR:Charles H. Leiserson
 #+SUBAUTHOR:Ronald L. Rivest
 #+SUBAUTHOR:Clifford Stein
-#+DATE:2019-07-26 14:11
-#+MACRO: VERSION Version 0.0.4
+#+DATE:2019-07-26 14:43
+#+MACRO: VERSION Version 0.0.5
 #+MACRO: OUTLINE EDITION 0.2
 #+CREATOR:WLHarvey4
 
@@ -182,6 +182,75 @@ This part will start you thinking about designing and analyzing algorithms.
 ** Hash Tables
 
 ** Binary Search Trees
+:PROPERTIES:
+:clrs:     286
+:END:
+
+#+cindex:binary search tree
+#+cindex:search tree, binary
+The search tree data structure supports many dynamic-set operations:
+
+- =search=
+- =minimum=
+- =maximum=
+- =predecessor=
+- =successor=
+- =insert=
+- =delete=
+
+
+#+cindex:dictionary
+#+cindex:priority queue
+A search tree can be used as a /dictionary/ and as a /priority queue/.
+
+{{{heading(Time Complexity)}}}
+
+{{{subheading(Basic operations)}}}
+
+#+cindex:binary search tree, time
+*Basic operations* on a binary search tree
+- take time proportional to the height of the tree.  
+
+
+{{{subheading(Complete binary tree)}}}
+
+For a *complete binary tree* with ~n~ nodes, such operations run in 
+- \Theta (\lg n) worst case
+
+
+{{{subheading(Linear chain)}}}
+
+If the tree is a *linear chain* of ~n~ nodes, the same operations take
+- \Theta(n) worst case
+
+
+{{{heading(Expected Height)}}}
+
+The expected height of a randomly built binary search tree is
+- \Theta(\lg n)
+
+  so that basic dynamic-set operations on such a tree take 
+- \Theta(\lg n) on average
+
+*** What a Binary Search Tree is
+:PROPERTIES:
+:clrs:     286
+:END:
+
+*** Querying a Binary Search Tree
+:PROPERTIES:
+:clrs:     289
+:END:
+
+*** Insertion and Deletion
+:PROPERTIES:
+:clrs:     294
+:END:
+
+*** Randomly Built Binary Search Trees
+:PROPERTIES:
+:clrs:     299
+:END:
 
 ** Red-Black Trees
 
@@ -376,6 +445,7 @@ Outline \copy 2019 by LOLH
 
 * Macro Definitions                                                :noexport:
 #+MACRO: heading @@texinfo:@heading $1@@
+#+MACRO: subheading @@texinfo:@subheading $1@@
 * Local Variables                                                  :noexport:
 # Local Variables:
 # time-stamp-pattern:"9/^\\#\\+DATE:%:y-%02m-%02d %02H:%02M$"
